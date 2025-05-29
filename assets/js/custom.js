@@ -65,8 +65,6 @@ jQuery(document).ready(function ($) {
 
     // Project Slider
     new Swiper('.projectSliderOuter .swiper', {
-        slidesPerView: 2.5,
-        centeredSlides: true,
         paginationClickable: true,
         loop: true,
         spaceBetween: 50,
@@ -90,7 +88,7 @@ jQuery(document).ready(function ($) {
                 spaceBetween: 20,
             },
             992: {
-                slidesPerView: 2.1,
+                slidesPerView: 4,
             },
         },
     });
