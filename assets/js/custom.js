@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
     new Swiper('.projectSliderOuter .swiper', {
         paginationClickable: true,
         loop: true,
-        spaceBetween: 50,
+        spaceBetween: 30,
         slideToClickedSlide: true,
         autoplay: {
             delay: 4000,

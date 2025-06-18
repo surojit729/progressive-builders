@@ -1790,6 +1790,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-size: 26px;
 	font-weight: 500;
 	color: #333333;
+	min-height: 62px;
 	margin-bottom: 8px;
 	transition: all 0.4s ease-in;
 }
@@ -2012,8 +2013,8 @@ input[type="number"]::-webkit-outer-spin-button {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	width: 100%;
-	max-width: 700px;
+	width: calc(50% - 210px);
+	/* max-width: 580px; */
 }
 
 .testimonialWrapper .testimonialSidePic img {
@@ -2136,4 +2137,89 @@ input[type="number"]::-webkit-outer-spin-button {
 .formCtaWrapper .contact-form-outer h2 {
 	font-size: 40px;
 	margin-bottom: 30px;
+}
+
+.innerBanner .bannerSidePic {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: auto;
+	width: calc(50% + 90px);
+	height: calc(100% - 127px);
+}
+
+.innerBanner .bannerSidePic img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.innerBanner .banner-content-outer {
+	flex-direction: column;
+	max-width: 550px;
+}
+
+.breadcrumb-wrapper span,
+.breadcrumb-wrapper span a {
+	font-size: 16px;
+	font-weight: 400;
+	color: #3C3C3C;
+}
+
+.breadcrumb-wrapper span a {
+	padding-right: 0;
+	margin-right: 20px;
+	position: relative;
+}
+
+.breadcrumb-wrapper span a::before {
+	content: "\f101";
+	font-family: "Line Awesome Free";
+	position: absolute;
+	top: 5px;
+	left: 100%;
+	font-weight: 600;
+	line-height: 1;
+	font-size: 16px;
+	color: #146092;
+}
+
+.innerBanner .banner-content-outer .banner-text {
+	margin-top: 35px;
+}
+
+.innerBanner .banner-content-outer h1 {
+	font-size: 65px;
+	font-weight: 700;
+}
+
+.innerBanner .banner-content-outer .banner-text p {
+	max-width: 510px;
+}
+
+.innerBanner .banner-content-outer .bannerStatOuter {
+	align-items: flex-start;
+}
+
+.innerBanner {
+	padding: 170px 0 150px;
+	min-height: auto;
+}
+
+.serviceContentWrapper {
+	padding: 70px 0;
+	background-color: #EEF8FF;
+}
+
+.serviceContentHolder figure {
+	margin-bottom: 30px;
+}
+
+.serviceContentHolder h3 {
+	font-size: 37px;
+	line-height: 1.3;
+	font-weight: 600;
+	color: #363636;
+	margin-bottom: 15px;
 }
