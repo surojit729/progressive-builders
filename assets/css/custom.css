@@ -2325,6 +2325,10 @@ aside.sidebar {
 	margin-bottom: 15px;
 }
 
+.formWidget .submit-field {
+	height: auto;
+}
+
 .formWidget .submit-field .btn {
 	min-width: auto;
 	position: static;
@@ -2335,6 +2339,13 @@ aside.sidebar {
 	font-weight: 500;
 	padding: 0;
 	height: 58px;
+	background-color: var(--secondary-color);
+	border-color: var(--secondary-color);
+}
+
+.formWidget .submit-field .btn:hover {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
 }
 
 .sidebarWidget:not(:last-child) {
@@ -2538,4 +2549,138 @@ aside.sidebar {
 
 .happyClientWrapper {
 	background-color: #EEF8FF;
+}
+
+.locationSpeclizationOuter {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+
+.locationSpeclizationOuter::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -60px;
+	bottom: 0;
+	/* background-image: url(../images/location-simmy-vallley-info-area-shape.svg); */
+	background-repeat: no-repeat;
+	width: 377px;
+	height: 100%;
+	background-size: cover;
+	z-index: 1;
+	background-color: #146092D9;
+	transform: skewX(15deg);
+}
+
+.locationSpeclizationOuter .thumbnailPic {
+	height: 100%;
+	margin: 0;
+}
+
+.locationSpeclizationOuter .thumbnailPic img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.locationSpeclizationOuter .descpData {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+	max-width: 360px;
+}
+
+.locationSpeclizationOuter .thumbnailPic::before,
+.locationSpeclizationOuter .descpData figure::before {
+	display: none;
+}
+
+.locationSpeclizationOuter .descpData figure {
+	margin-bottom: 20px;
+}
+
+.locationSpeclizationOuter .descpData .clBtn a {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--color-white);
+}
+
+.locationSpeclizationOuter .descpData .clBtn a p {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--color-white);
+	gap: 6px;
+}
+
+.locationSpeclizationOuter .descpData .spcelizationData P {
+	font-family: var(--secondary-font);
+	font-size: 23px;
+	line-height: 1.5;
+	font-weight: 600;
+	color: var(--color-white);
+	margin: 20px 0;
+	text-transform: capitalize;
+}
+
+.locationSpeclizationOuter .descpData .spcelizationData a {
+	position: relative;
+	color: var(--color-white);
+	font-size: 16px;
+	font-weight: 500;
+	padding-left: 20px;
+}
+
+.locationSpeclizationOuter .descpData .spcelizationData li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.locationSpeclizationOuter .descpData .spcelizationData a::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 0;
+	background-image: url(../images/location-simmy-vallley-info-area-check-icon.svg);
+	width: 12px;
+	height: 12px;
+	background-repeat: no-repeat;
+}
+
+.locationSpeclizationOuter .descpData .spcelizationData a:hover {
+	color: var(--secondary-color);
+}
+
+.repeaterInfoListOuter .row {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.repeaterInfoListOuter .repeaterInfoListPic {
+	position: relative;
+	min-height: 430px;
+	height: 430px;
+}
+
+.repeaterInfoListOuter .repeaterInfoListPic img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.repeaterInfoListOuter .repeaterInfoListPic::before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	background-image: url(../images/logo-footer.svg);
+	width: 200px;
+	height: 120px;
+	background-repeat: no-repeat;
+	transform-origin: top left;
+	transform: scale(0.5);
 }

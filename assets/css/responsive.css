@@ -47,6 +47,28 @@
 	.happyClientContentHolder {
 		display: block;
 	}
+
+	.innerBanner .bannerSidePic {
+		width: calc(50% - 70px);
+	}
+
+	.formWidget .title p,
+	.reviewWidget .title>p,
+	.locationWidget .title>p {
+		font-size: 28px;
+	}
+
+	.formWidget .submit-field .btn {
+		font-size: 16px;
+	}
+
+	.locationSpeclizationOuter {
+		height: 420px;
+	}
+
+	.locationSpeclizationOuter .descpData .spcelizationData P {
+		margin: 12px 0;
+	}
 }
 
 
@@ -427,7 +449,7 @@
 	}
 
 	.innerBanner {
-		padding: 170px 0 150px;
+		padding: 170px 0 80px;
 	}
 
 	.faq_acrdn {
@@ -696,5 +718,26 @@
 		padding: 5px 45px 5px 0;
 		font-size: 18px;
 
+	}
+
+	.locationSpeclizationOuter .descpData .spcelizationData li:not(:last-child) {
+		margin-bottom: 5px;
+	}
+
+	.locationSpeclizationOuter .descpData .spcelizationData a {
+		font-size: 15px;
+	}
+
+	.locationSpeclizationOuter::before {
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: none;
+	}
+
+	.repeaterInfoListOuter .repeaterInfoListPic {
+		min-height: auto;
+		height: auto;
+		margin-bottom: 30px;
 	}
 }
