@@ -92,5 +92,9 @@ jQuery(document).ready(function ($) {
             },
         },
     });
+    // Sidebar Location Toogle
 
+    jQuery(".toggleBtn p").click(function () {
+        jQuery(".locationMenu").toggleClass("active");
+    });
 });
